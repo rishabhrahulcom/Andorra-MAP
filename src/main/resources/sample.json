@@ -1,0 +1,51 @@
+{
+  "nodes": [
+    { "id": 8647239561, "lat": 51.509865, "lon": -0.118092, "tags": {"amenity": "school"} },
+    { "id": 8647239562, "lat": 51.510865, "lon": -0.118192, "tags": {"amenity": "parking"} },
+    { "id": 8647239563, "lat": 51.511865, "lon": -0.118292, "tags": {"amenity": "restaurant"} },
+    { "id": 8647239564, "lat": 51.512865, "lon": -0.118392, "tags": {"amenity": "cafe"} },
+    { "id": 8647239565, "lat": 51.513865, "lon": -0.118492, "tags": {"amenity": "hospital"} },
+    { "id": 8647239566, "lat": 51.509965, "lon": -0.119092, "tags": {"amenity": "library"} },
+    { "id": 8647239567, "lat": 51.510965, "lon": -0.119192, "tags": {"amenity": "pharmacy"} },
+    { "id": 8647239568, "lat": 51.511965, "lon": -0.119292, "tags": {"amenity": "bank"} },
+    { "id": 8647239569, "lat": 51.512965, "lon": -0.119392, "tags": {"amenity": "post_office"} },
+    { "id": 8647239570, "lat": 51.513965, "lon": -0.119492, "tags": {"amenity": "police"} },
+    { "id": 8647239571, "lat": 51.510065, "lon": -0.120092, "tags": {"natural": "tree"} },
+    { "id": 8647239572, "lat": 51.511065, "lon": -0.120192, "tags": {"natural": "tree"} },
+    { "id": 8647239573, "lat": 51.512065, "lon": -0.120292, "tags": {"natural": "tree"} },
+    { "id": 8647239574, "lat": 51.513065, "lon": -0.120392, "tags": {"natural": "tree"} },
+    { "id": 8647239575, "lat": 51.514065, "lon": -0.120492, "tags": {"natural": "tree"} },
+    { "id": 8647239576, "lat": 51.510165, "lon": -0.121092, "tags": {"highway": "bus_stop"} },
+    { "id": 8647239577, "lat": 51.511165, "lon": -0.121192, "tags": {"highway": "crossing"} },
+    { "id": 8647239578, "lat": 51.512165, "lon": -0.121292, "tags": {"highway": "traffic_signals"} },
+    { "id": 8647239579, "lat": 51.513165, "lon": -0.121392, "tags": {"highway": "crossing"} },
+    { "id": 8647239580, "lat": 51.514165, "lon": -0.121492, "tags": {"highway": "bus_stop"} }
+  ],
+  "ways": [
+    { "id": 9647239561, "nodes": [8647239561, 8647239562, 8647239563, 8647239564, 8647239565],
+      "tags": {"highway": "primary", "name": "Main Street"} },
+    { "id": 9647239562, "nodes": [8647239566, 8647239567, 8647239568, 8647239569, 8647239570],
+      "tags": {"highway": "secondary", "name": "Market Street"} },
+    { "id": 9647239563, "nodes": [8647239571, 8647239572, 8647239573, 8647239574, 8647239575],
+      "tags": {"highway": "residential", "name": "Park Road"} },
+    { "id": 9647239564, "nodes": [8647239576, 8647239577, 8647239578, 8647239579, 8647239580],
+      "tags": {"highway": "residential", "name": "Station Road"} },
+    { "id": 9647239565, "nodes": [8647239561, 8647239566, 8647239571, 8647239576],
+      "tags": {"highway": "footway"} }
+  ],
+  "relations": [
+    { "id": 7647239561,
+      "members": [
+        {"type": "way", "ref": 9647239561, "role": "outer"},
+        {"type": "way", "ref": 9647239562, "role": "outer"},
+        {"type": "way", "ref": 9647239563, "role": "outer"},
+        {"type": "way", "ref": 9647239564, "role": "outer"}
+      ],
+      "tags": {
+        "type": "multipolygon",
+        "landuse": "residential",
+        "name": "Downtown District"
+      }
+    }
+  ]
+}
