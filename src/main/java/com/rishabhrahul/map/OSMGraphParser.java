@@ -55,7 +55,7 @@ return graph;
        double lonTo = to.getLongitude();
        double deltaLat = Math.toRadians(latTo - latFrom);
        double deltaLon = Math.toRadians(lonTo - lonFrom);
-        // no idea
+        // no idea .. somebody told me this is the formula ...
        double a = Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2)+ Math.cos(Math.cos(latFrom) * Math.cos(latTo))
                * Math.sin(deltaLon / 2) * Math.sin(deltaLon / 2);
 
