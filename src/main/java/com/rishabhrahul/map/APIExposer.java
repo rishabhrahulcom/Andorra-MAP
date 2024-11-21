@@ -24,18 +24,9 @@ public class APIExposer {
     @GetMapping
     public List<Long> route(@RequestParam String from) {
         var sx = CustomRouting.DFS(graph, graph.getNode(Long.parseLong(from)));
-//    List<Object>  xs = sx.entrySet().parallelStream()
-//                .map(entry -> new Object[]{
-//                        entry.getKey(),
-//                        entry.getValue().getLatitude(),
-//                        entry.getValue().getLongitude()
-//                })
-//                .collect(Collectors.toList());
+
         return sx.stream().map(GraphNode::getLabel).toList();
     }
 
-//    @GetMapping("/getgraph")
-//    public List<Long> getgraph() {
-//        return graph..;
-//    }
+
 }
