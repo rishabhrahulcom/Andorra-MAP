@@ -19,7 +19,9 @@ public class Graph {
      * add edge
      * // setter and getter
      *
-     * wtf is this  // (BiFunction<? super Integer, ? super GraphNode, ? extends GraphNode>) nodes.remove(label)
+     * wtf is this  // (BiFunction<? super Integer, ? super GraphNode, ? extends GraphNode>) nodes.remove(label) xd
+     * How does this make my life easier xd.
+     *@TODO.. 
      */
     GraphNode addNode(long label) {
     // just added a node with all its value empty
